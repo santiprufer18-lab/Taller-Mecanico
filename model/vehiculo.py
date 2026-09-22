@@ -19,6 +19,14 @@ class Vehiculo(ABC):
         self.__patente = valor
 
     @property
+    def anio(self) -> int:
+        return self.__anio
+
+    @property
+    def en_taller(self) -> bool:
+        return self._en_taller
+
+    @property
     def modelo(self) -> Modelo:
         return self.__modelo
 
